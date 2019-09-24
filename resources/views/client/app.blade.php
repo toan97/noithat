@@ -827,26 +827,6 @@
 					</div>
 					<!-- BESTSELLER-PRODUCTS-AREA END -->
 				</div>
-				<div class="row">
-					<!-- IMAGE-ADD-AREA START -->
-					<div class="image-add-area">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<!-- ONEHALF-ADD START -->
-							<div class="onehalf-add-shope zoom-img">
-								<a href="#"><img src="img/product/one-helf1.jpg" alt="shope-add" /></a>
-							</div>
-							<!-- ONEHALF-ADD END -->
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<!-- ONEHALF-ADD START -->
-							<div class="onehalf-add-shope zoom-img">
-								<a href="#"><img src="img/product/one-helf2.jpg" alt="shope-add" /></a>
-							</div>
-							<!-- ONEHALF-ADD END -->
-						</div>						
-					</div>
-					<!-- IMAGE-ADD-AREA END -->
-				</div>
 			</div>
 		</section>
 		<!-- MAIN-CONTENT-SECTION END -->
@@ -862,143 +842,25 @@
 							<div class="row">
 								<!-- LATEST-NEWS-CAROUSEL START -->
 								<div class="latest-news-carousel">
-									<!-- LATEST-NEWS-SINGLE-POST START -->
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/1.jpg" alt="latest-post" /></a>
-												<h2><a href="#">What is Lorem Ipsum?</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->
-									<!-- LATEST-NEWS-SINGLE-POST START -->
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/2.jpg" alt="latest-post" /></a>
-												<h2><a href="#">Share the Love for printing</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+									@foreach ($posts as $po)
+										<!-- LATEST-NEWS-SINGLE-POST START -->
+										<div class="item">
+											<div class="latest-news-post">
+												<div class="single-latest-post">
+													<a href="#"><img src="{{ $po->image }}" alt="latest-post" /></a>
+													<h2><a href="#">{{ $po->name }}</a></h2>
+													<p>{{ $po->short_desc }}...</p>
+													<div class="latest-post-info">
+														<i class="fa fa-calendar"></i><span>{{ $po->date_posted }}</span>
+													</div>
+													<div class="read-more">
+														<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->
-									<!-- LATEST-NEWS-SINGLE-POST START -->								
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/3.jpg" alt="latest-post" /></a>
-												<h2><a href="#">Answers your Questions P..</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->
-									<!-- LATEST-NEWS-SINGLE-POST START -->								
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/4.jpg" alt="latest-post" /></a>
-												<h2><a href="#">What is Bootstrap? – History</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->
-									<!-- LATEST-NEWS-SINGLE-POST START -->								
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/5.jpg" alt="latest-post" /></a>
-												<h2><a href="#">Share the Love for..</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->
-									<!-- LATEST-NEWS-SINGLE-POST START -->								
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/6.jpg" alt="latest-post" /></a>
-												<h2><a href="#">What is Bootstrap? – The History a..</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->	
-									<!-- LATEST-NEWS-SINGLE-POST START -->								
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/3.jpg" alt="latest-post" /></a>
-												<h2><a href="#">Answers your Questions P..</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->
-									<!-- LATEST-NEWS-SINGLE-POST START -->								
-									<div class="item">
-										<div class="latest-news-post">
-											<div class="single-latest-post">
-												<a href="#"><img src="img/latest-news/4.jpg" alt="latest-post" /></a>
-												<h2><a href="#">What is Bootstrap? – History</a></h2>
-												<p>Lorem Ipsum is simply dummy text of the printing and Type setting industry. Lorem Ipsum has been...</p>
-												<div class="latest-post-info">
-													<i class="fa fa-calendar"></i><span>2015-06-20 04:51:43</span>
-												</div>
-												<div class="read-more">
-													<a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- LATEST-NEWS-SINGLE-POST END -->									
-								</div>	
+										<!-- LATEST-NEWS-SINGLE-POST END -->
+									@endforeach
 								<!-- LATEST-NEWS-CAROUSEL START -->
 							</div>
 						</div>
@@ -1007,164 +869,6 @@
 			</div>
 		</section>
 		<!-- LATEST-NEWS-AREA END -->
-		<!-- BRAND-CLIENT-AREA START -->
-		<section class="brand-client-area">
-			<div class="container">
-				<div class="row">
-					<!-- BRAND-CLIENT-ROW START -->
-					<div class="brand-client-row">
-						<div class="center-title-area">
-							<h2 class="center-title">BRAND & CLIENTS</h2>
-						</div>
-						<div class="col-xs-12">
-							<div class="row">
-								<!-- CLIENT-CAROUSEL START -->
-								<div class="client-carousel">
-									<!-- CLIENT-SINGLE START -->
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/1.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/2.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/3.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/4.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/5.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/1.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->									
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/3.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/2.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/3.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/4.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/5.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/1.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->									
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/3.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/4.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->
-									<!-- CLIENT-SINGLE START -->								
-									<div class="item">
-										<div class="single-client">
-											<a href="#">
-												<img src="img/brand/5.png" alt="brand-client" />
-											</a>
-										</div>									
-									</div>
-									<!-- CLIENT-SINGLE END -->									
-								</div>
-								<!-- CLIENT-CAROUSEL END -->
-							</div>
-						</div>
-					</div>
-					<!-- BRAND-CLIENT-ROW END -->
-				</div>
-			</div>
-		</section>
-		<!-- BRAND-CLIENT-AREA END -->
 		<!-- COMPANY-FACALITY START -->
 		<section class="company-facality">
 			<div class="container">
@@ -1226,7 +930,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- COMPANY-FACALITY END -->
+		<!-- COMPANY-FACALITY E	ND -->
 		<!-- FOOTER-TOP-AREA START -->
 		<section class="footer-top-area">
 			<div class="container">
@@ -1235,18 +939,6 @@
 						<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 							<!-- FOOTER-TOP-LEFT START -->
 							<div class="footer-top-left">
-								<!-- NEWSLETTER-AREA START -->
-								<div class="newsletter-area">
-									<h2>Newsletter</h2>
-									<p>Subscribe to our mailing list to receive updates on new arrivals, special offers and other discount information.</p>
-									<form action="#">
-										<div class="form-group newsletter-form-group">
-										  <input type="text" class="form-control newsletter-form" placeholder="Enter your e-mail">
-										  <input type="submit" class="newsletter-btn" name="submit" value="Subscribe" />
-										</div>
-									</form>
-								</div>
-								<!-- NEWSLETTER-AREA END -->
 								<!-- ABOUT-US-AREA START -->
 								<div class="about-us-area">
 									<h2>About Us</h2>
@@ -1268,62 +960,6 @@
 							<!-- FOOTER-TOP-LEFT END -->
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-							<!-- FOOTER-TOP-RIGHT-1 START -->
-							<div class="footer-top-right-1">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 hidden-sm">
-										<!-- STATICBLOCK START -->
-										<div class="staticblock">
-											<h2>static block</h2>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s<br />when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-										</div>
-										<!-- STATICBLOCK END -->
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-										<!-- STORE-INFORMATION START -->
-										<div class="Store-Information">
-											<h2>Store Information</h2>
-											<ul>
-												<li>
-													<div class="info-lefticon">
-														<i class="fa fa-map-marker"></i>
-													</div>
-													<div class="info-text">
-														<p>My Company, 42 avenue des Champs Elysées 75000 Paris France </p>
-													</div>
-												</li>
-												<li>
-													<div class="info-lefticon">
-														<i class="fa fa-phone"></i>
-													</div>
-													<div class="info-text call-lh">
-														<p>Call us now : 0123-456-789</p>
-													</div>
-												</li>
-												<li>
-													<div class="info-lefticon">
-														<i class="fa fa-envelope-o"></i>
-													</div>
-													<div class="info-text">
-														<p>Email : <a href="mailto:sales@yourcompany.com"><i class="fa fa-angle-double-right"></i> sales@yourcompany.com</a></p>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<!-- STORE-INFORMATION END -->
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-										<!-- GOOGLE-MAP-AREA START -->
-										<div class="google-map-area">
-											<div class="google-map">
-												<div id="googleMap" style="width:100%;height:150px;"></div>
-											</div>
-										</div>
-										<!-- GOOGLE-MAP-AREA END -->
-									</div>
-								</div>
-							</div>
-							<!-- FOOTER-TOP-RIGHT-1 END -->
 							<div class="footer-top-right-2">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">

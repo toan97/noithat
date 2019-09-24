@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(Invoice_detailsTableSeeder::class);
         $this->call(CommentsTableSeeder::class);
         $this->call(GalleriesTableSeeder::class);
+        $this->call(PostsTableSeeder::class);
     }
 }
